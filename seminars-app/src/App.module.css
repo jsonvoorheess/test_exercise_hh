@@ -1,0 +1,69 @@
+.app {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.header hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #34248f, #6c63ff);
+    margin: 20px 0;
+}
+
+.h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.seminars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+@media (max-width: 1152px) {
+   .seminars {
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+   .header {
+    display: flex;
+    justify-content: center;
+   }
+}
+
+@media (max-width: 801px) {
+    .seminars {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .header {
+     display: flex;
+     justify-content: center;
+    }
+ }
+
+
+
+
